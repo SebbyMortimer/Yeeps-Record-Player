@@ -91,7 +91,7 @@ class PickHelper {
             if (this.pickedObject && this.pickedObject.parent.isHoverable) {
                 let imgFilePath = this.pickedObject.material.map.image.src;
                 let recordName = imgFilePath.split("/").pop().replace(".png","")
-                recordAudio.src = "audio/records/" + recordName + ".wav";
+                recordAudio.src = "audio/records/" + recordName + ".ogg";
                 recordAudio.play();
 
                 document.getElementById("recordNamePTag").innerText = decodeURIComponent(recordName);
