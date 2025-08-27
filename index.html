@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Yeeps Record Player</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main id="mainDiv">
+        <div style="position: absolute; width: 100%; aspect-ratio: 16/9;">
+            <p id="recordNamePTag" style="position: absolute; left: 66%; right: 5%; bottom: 30%; font-size: 2vw; text-align: center;">Click a record to listen to it</p>
+            <img id="pauseImage" style="position: absolute; right: 20%; bottom: 25%; width: 4vw;" src="images/pausePressed.png" alt="Pause image">
+            <img id="playImage" style="position: absolute; right: 15%; bottom: 25%; width: 4vw;" src="images/playPressed.png" alt="Play image">
+        </div>
+    </main>
+    <audio id="buttonAudio" src="audio/ButtonLargePress.wav"></audio>
+    <audio loop id="recordAudio"></audio>
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
