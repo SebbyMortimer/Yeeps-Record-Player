@@ -17,6 +17,15 @@
     </main>
     <audio id="buttonAudio" src="audio/ButtonLargePress.wav"></audio>
     <audio loop id="recordAudio"></audio>
-    <script type="module" src="/js/main.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/",
+            "tween": "https://cdn.jsdelivr.net/npm/@tweenjs/tween.js@20.0.0/dist/tween.esm.js"
+          }
+        }
+    </script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>

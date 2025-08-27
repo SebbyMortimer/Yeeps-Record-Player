@@ -1,7 +1,9 @@
-import * as THREE from 'three';
-import TWEEN, {Group} from '@tweenjs/tween.js'
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+import * as THREE from "three";
+import * as TWEEN from "tween";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
+
+const { Group } = TWEEN;
 
 const mainDiv = document.getElementById("mainDiv");
 const recordAudio = document.getElementById("recordAudio");
